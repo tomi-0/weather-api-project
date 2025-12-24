@@ -19,7 +19,7 @@ body {
 
     background: linear-gradient(#AAD9CE, #5066A4);
     text-align: center;
-    height: 600px;
+    height: 660px;
     width: 450px;
 
     border-radius: 20px;
@@ -61,16 +61,56 @@ body {
 
 .weather-emoji {
     height: 250px;
-    margin-top: -100px;
+    margin-top: -180px;
 }
 
 .city-and-temp {
     font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: -200px;
+    align-items: center;
 }
 
-.city {
-    
+.current-temp {
+    font-size: 70px;
 }
+
+.temperature-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    font-size: 25px;
+}
+
+.low-and-high-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: space-betweens;
+    justify-content: space-between;
+    height: 70px;
+}
+
+
+.celcius-button, .farenheit-button{
+    border: none;
+    height: 50px;
+    width: 65px;
+    font-size: 30px;
+    font-family: Pixelify Sans, Verdana;
+    color: black;
+    opacity: 0.3;
+}
+
+.temp-unit {
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
 
 
 
