@@ -38,12 +38,18 @@ body {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
+
+
 .search-input {
     border: none;
     background: white;
     width: 300px;
     font-size: 40px;
+    font-family: Pixelify Sans, Verdana;
+    outline: none;
 }
 
 .search-icon {
@@ -51,7 +57,7 @@ body {
     border: none;
     background: white;
     box-shadow: none;
-
+    margin-top: -30px;
     padding: 10px;
 }
 
@@ -61,7 +67,7 @@ body {
 
 .weather-emoji {
     height: 250px;
-    margin-top: -180px;
+    margin-top: -30px;
 }
 
 .city-and-temp {
@@ -69,9 +75,10 @@ body {
     display: flex;
     justify-content: space-between;
     width: 300px;
-    margin-top: -200px;
     align-items: center;
+    margin-top: -30px;
 }
+
 
 .current-temp {
     font-size: 70px;
@@ -101,13 +108,21 @@ body {
     font-size: 30px;
     font-family: Pixelify Sans, Verdana;
     color: black;
-    opacity: 0.3;
+    background-color: rgb(255, 255, 255, 0.3);
+    
 }
 
 .temp-unit {
     display: flex;
     overflow: hidden;
     border-radius: 30px;
+}
+
+.emoji-animation{
+    background-color: red;
+    height: 200px;
+    width: 400px;
+    margin: 20px;
 }
 
 
