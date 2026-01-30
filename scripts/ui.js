@@ -25,3 +25,8 @@ export function renderWeatherData(weatherObject) {
         </div>
     `;
 }
+
+export function showError() {
+    weatherEmoji.innerHTML = "<></>"
+    weatherData.innerHTML = "<h1> Could not find city</h1>"
+}
