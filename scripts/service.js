@@ -1,2 +1,23 @@
-// Logic to fetch data and "clean" it into a simple object.
+import { API_KEY } from './config.js'
+
+// Logic to fetch data and "clean" it into a simple object
+export async function fetchData(city) {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+    const response = await fetch(url)
+
+    if (!response.ok) {
+        throw new Error("Couldn't fetch data")
+    }
+
+    const weatherData = await response.json()
+    console.log(weatherData)
+
+    return {
+        city : weatherData.name,
+        temp: weatherData.main.temp,
+        low_temp: weatherData.main.temp_min,
+        high_temp: weatherData.main.temp_max,
+        condition:  weatherData.weather[0].main
+    }
+}
 

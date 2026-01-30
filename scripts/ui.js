@@ -1,1 +1,1 @@
-// Functions that touch the DOM (updating text, images, or lists).
+// Functions that touch the DOM (updating text, images, or lists)
