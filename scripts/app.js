@@ -1,7 +1,7 @@
 import { fetchData } from "./service.js"
+import { renderWeatherData } from "./ui.js"
 
 // The "Entry Point" that links everything. Holds event listeners.
-const city = "London"
 
 // 1. The "Brain" (Global Variables & Selectors)
 // store all dunamic HTML elemetns
@@ -17,16 +17,11 @@ const highestTemp = document.querySelector('.high-temp')
 const celciusButton = document.querySelector('.celcius-button')
 const farenheitButton = document.querySelector('.farenheit-button')
 
-// 2. The "Messenger" (The API Logic)
+// The "Messenger" (The API Logic)
 const weatherObject = await fetchData('Lagos')
 console.log(weatherObject)
 
-// 3. The "Translator" (Data Processing)
+// The "Decorator" (DOM Manipulation)
+renderWeatherData(weatherObject)
 
-
-
-// 4. The "Decorator" (DOM Manipulation)
-
-
-
-// 5. The "Triggers" (Event Listeners)
+// The "Triggers" (Event Listeners)

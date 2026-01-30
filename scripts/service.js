@@ -14,10 +14,11 @@ export async function fetchData(city) {
 
     return {
         city : weatherData.name,
-        temp: weatherData.main.temp,
-        low_temp: weatherData.main.temp_min,
-        high_temp: weatherData.main.temp_max,
-        condition:  weatherData.weather[0].main
+        // temp is fetched in celcius
+        temp: weatherData.main.temp.toFixed(0),
+        low_temp: weatherData.main.temp_min.toFixed(1),
+        high_temp: weatherData.main.temp_max.toFixed(1),
+        condition: weatherData.weather[0].main,
     }
 }
 
