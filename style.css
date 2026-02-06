@@ -19,9 +19,10 @@ body {
 
     background: linear-gradient(#AAD9CE, #5066A4);
     text-align: center;
-    height: 660px;
+    height: 600px;
     min-width: 450px;
     border-radius: 20px;
+    min-width: fit-content;
 }
 
 .search-bar {
@@ -34,11 +35,11 @@ body {
     height: 60px;
     font-size: 40px;
     padding: 0px 30px;
-
+        
     display: flex;
-    justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    justify-self: start;
 }
 
 
@@ -66,7 +67,7 @@ body {
 
 .weather-emoji {
     height: 170px;
-    margin-bottom: 30px;
+    margin-top: -200px;
 }
 
 .city-and-temp {
@@ -75,7 +76,7 @@ body {
     justify-content: space-between;
     width: 300px;
     align-items: center;
-    margin-top: -30px;
+    margin-top: -200px;
 }
 
 
@@ -117,11 +118,9 @@ body {
     border-radius: 30px;
 }
 
-.emoji-animation{
-    background-color: red;
-    height: 200px;
-    width: 400px;
-    margin: 20px;
+.error {
+    font-size: 30px;
+    margin-bottom: 280px;
 }
 
 

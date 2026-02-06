@@ -10,7 +10,6 @@ export async function fetchData(city) {
     }
 
     const weatherData = await response.json()
-    console.log(weatherData)
 
     return {
         city : weatherData.name,
